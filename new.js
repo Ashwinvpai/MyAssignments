@@ -36,3 +36,16 @@ const emp ={
 console.log("employee details ",emp);
 emp.id=999;
 console.log("Changed Employee Details ",emp);
+//reference
+var books ={bookid:101,bookname:"Harry potter"};
+var books1 = books;
+console.log("Books details ",books);
+books1.bookid = 999;
+console.log("Books1 details ",books1);
+console.log("Books details ",books);
+
+//Shallow copy 
+var books1copy =Object.assign({},books);
+books1copy.bookid=90001;
+console.log("Books details ",books);
+console.log("books1copy details ",books1copy);
