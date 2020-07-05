@@ -49,3 +49,29 @@ var books1copy =Object.assign({},books);
 books1copy.bookid=90001;
 console.log("Books details ",books);
 console.log("books1copy details ",books1copy);
+
+//Function
+function Myfunc1(p1,p2)
+{
+var i,sum = 0;
+for(i=0;i < Myfunc1.arguments.length;i++)
+{
+    sum+=Myfunc1.arguments[i];
+}
+console.log("Value of Arguements",Myfunc1.arguments);
+console.log("VAlue of Sum ",sum);
+};
+Myfunc1(1,2,3,4,5,6,7);
+Myfunc1(12)
+Myfunc1(1,"Hi");
+Myfunc1("Hello ","World");
+Myfunc1(true,1);
+Myfunc1("Javascript",true);
+
+//Array Splice
+
+var fruits = ["apples","bananas","mangoes"];
+fruits.splice(0,1,"guavas");
+console.log(fruits);
+fruits.splice(2,2,"Oranges",1,2,3,4,5,6,7);
+console.log(fruits);
