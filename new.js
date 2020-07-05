@@ -1,12 +1,12 @@
 alert("This is my new web page");
-var i = 1;
-alert("Value of i"+i);
+var i = 10;
+console.log("Value of i",i);
 var i =[30,true,"Ashwin",12.5];
-Console.alert("Value of Array",i);
-Console.alert("Value of element at 1st Position",i[0]);
-Console.alert("Value of element at 1st Position",i[1]);
-Console.alert("Value of element at 1st Position",i[2]);
-Console.alert("Value of element at 1st Position",i[3]);
+console.log("Value of Array",i);
+console.log("Value of element at 1st Position",i[0]);
+console.log("Value of element at 1st Position",i[1]);
+console.log("Value of element at 1st Position",i[2]);
+console.log("Value of element at 1st Position",i[3]);
 var emp = {
     id:10,
     name:"Ashwin",
@@ -14,10 +14,14 @@ var emp = {
    dept:120
     
 };
-Console.alert("VAlue of employee",emp);
-Console.alert("Employee Id",emp.id);
-Console.alert("Employee Name",emp.name);
-Console.alert("Employee Salary",emp.Salary);
-Console.alert("Employee Department",emp.dept);
-delete emp.dept;
-Console.alert("Employee Details",emp);
+console.log("VAlue of employee",emp);
+console.log("Employee Id",emp.id);
+console.log("Employee Name",emp.name);
+console.log("Employee Salary",emp.Salary);
+console.log("Employee Department",emp.dept);
+
+
+console.log("Employee Details",emp);
+var emp1 =emp;
+delete emp1.dept;
+console.log("Employee 1 details",emp1);
