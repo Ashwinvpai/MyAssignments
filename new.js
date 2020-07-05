@@ -25,3 +25,10 @@ console.log("Employee Details",emp);
 var emp1 =emp;
 delete emp1.dept;
 console.log("Employee 1 details",emp1);
+const  pi =3.14;
+console.log("Value of pi",pi);
+const obj ={
+    1:"john",
+    2:"Steve"
+};
+console.log("Value of object",obj);
