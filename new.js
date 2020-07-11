@@ -183,3 +183,21 @@ var pos = src.findIndex(function (item){
 
 console.log(pos);
 
+var vegetables = ["Tomato","Beans","Carrots","Potato","Onions"];
+var result = vegetables.push("yams");
+console.log(vegetables);
+result = vegetables.pop();
+console.log(vegetables);
+
+result = vegetables.slice(2,5);
+console.log(result);
+result = vegetables.sort();
+console.log(result);
+result = vegetables.reverse();
+console.log(result);
+result = vegetables.toString(",");
+console.log(result);
+result = vegetables.shift();
+console.log(result);
+
+
