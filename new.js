@@ -1,3 +1,5 @@
+
+
 alert("This is my new web page");
 var i = 10;
 console.log("Value of i",i);
@@ -75,3 +77,85 @@ fruits.splice(0,1,"guavas");
 console.log(fruits);
 fruits.splice(2,2,"Oranges",1,2,3,4,5,6,7);
 console.log(fruits);
+
+
+//Functions
+
+function Myfunc2(p1,p2)
+{
+    var sum1 = p1 + p2;
+    console.log("The sum of parameters "+p1+" and "+p2+" with sum "+sum1);
+    console.log(`The sum of parameters ${p1} and ${p2} with sum ${sum1}`);
+    return sum1;
+}
+var result = Myfunc2(10,20);
+console.log(`${result}`);
+
+
+
+result = Myfunc2(10.5,10.5);
+result = Myfunc2(true,25);
+result = Myfunc2("hello","world");
+result = Myfunc2(30,"Javascript");
+result = Myfunc2("Hi",false);
+result = Myfunc2(30);
+result = Myfunc2(30,20,1,2,3,4,5);
+
+
+function Myfunc3(...p1)
+{
+ var i,sum=0;
+ for(i=0;i<p1.length;i++)
+ {
+     sum+=p1[i];
+ }
+  console.log("No of params",p1);
+  console.log("Sum",sum);
+}
+
+Myfunc3(10,20);
+Myfunc3(10);
+Myfunc3(10,"Ashwin");
+Myfunc3(1,2,3,4,5,6,7,8,9);
+Myfunc3("Hello","World","This","is","a","Javascript","file");
+
+//Anonymous Function
+
+(function Myfunc4(p1)
+{
+    console.log(p1 * p1);
+
+})(20);
+
+//Anonymous Function without a name 
+
+var f1 = function (p2)
+{
+    return p2.substr(3,5);
+}
+console.log("Function F1 contains",f1);
+var result = f1("Good morning");
+console.log("Value of result is ",result);
+
+function Myfunc5(arr1)
+{
+ arr2=[];
+ for(i=0;i<arr1.length;i++)
+ {
+     arr2[i]= arr1[i]* arr1[i];
+
+ }
+ return arr2;
+}
+
+var sourcearray = [10,20,30,40,50];
+result = Myfunc5(sourcearray);
+
+result = sourcearray.map(function (item){
+    return item*item;
+});
+
+console.log(sourcearray);
+console.log(result);
+
+
