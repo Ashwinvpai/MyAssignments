@@ -151,6 +151,7 @@ function Myfunc5(arr1)
 var sourcearray = [10,20,30,40,50];
 result = Myfunc5(sourcearray);
 
+//Map Function
 result = sourcearray.map(function (item){
     return item*item;
 });
@@ -158,4 +159,27 @@ result = sourcearray.map(function (item){
 console.log(sourcearray);
 console.log(result);
 
+//Find Function
+var src =[20,40,80,100,120];
+result = src.find(function (item){
+    if(item == 80)
+    return true;
+});
+
+console.log(result);
+
+//Filter Function
+result = src.filter(function (item){
+    if(item > 80)
+    return true;
+});
+console.log(result);
+
+//Index Position
+var pos = src.findIndex(function (item){
+    if(item == 40)
+    return true;
+});
+
+console.log(pos);
 
